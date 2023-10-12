@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item " onclick="changeTitle('title-1');">
+                    <img src="/assets/movie-1.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-2');">
+                    <img src="/assets/movie-2.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-3');">
+                    <img src="/assets//movie-3.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-4');">
+                    <img src="/assets/movie-4.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-5');">
+                    <img src="/assets/movie-5.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-6');">
+                    <img src="/assets/movie-6.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-7');">
+                    <img src="/assets/movie-7.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeTitle('title-8');">
+                    <img src="/assets/movie-8.jpg" alt="">
+                </div>
+            </div>
+            <div class='content '>
+                <h3 class='head-3'>Coming Soon</h3>
+                <h2 class='head-2 title-1 active'>Movie-1</h2>
+                <h2 class='head-2 title-2'>Movie-2</h2>
+                <h2 class='head-2 title-3'>Movie-3</h2>
+                <h2 class='head-2 title-4'>Movie-4</h2>
+                <h2 class='head-2 title-5'>Movie-5</h2>
+                <h2 class='head-2 title-6'>Movie-6</h2>
+                <h2 class='head-2 title-7'>Movie-7</h2>
+                <h2 class='head-2 title-8'>Movie-8</h2>
+                <div class='last-div-2'>
+                    <p>2019-Movie-2h 10m</p>
+                    <div>
+                        <span class='imd'>IMDb</span>
+                        <span class='number'>7.4</span>
+                    </div>
+                </div>
+                <p class='lorem'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum ex velit illum
+                    quam
+                    dolor modi animi suscipit ducimus! Quo nam illum dicta omnis tenetur hic, ratione
+                    excepturi...<span class='read'>Read More</span> </p>
+                <button>Watch Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+
+</html>
